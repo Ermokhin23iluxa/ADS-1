@@ -7,7 +7,7 @@
 bool checkPrime(uint64_t value) {
   int kol = 0;
   bool flag = true;
-  for (int i = 2; i <= (int)sqrt(value); ++i) {
+  for (int i = 2; i <= (value / 2) + 1; ++i) {
     if (value % i == 0) {
       kol++;
     }
