@@ -8,8 +8,9 @@ bool checkPrime(uint64_t value) {
   if (value == 1) return 0;
   for (int i = 1; i < (value / 2) + 1; i++)
     if (value%i == 0) cot++;
-  if (cot>1) return false;
-  else return true;
+  if (cot > 1) return false;
+  else
+    return true;
 }
 
 uint64_t nPrime(uint64_t n) {
@@ -19,7 +20,7 @@ uint64_t nPrime(uint64_t n) {
       cot++;
     }
     if (cot == n) {
-	    return i;
+      return i;
     }
   }
 }
